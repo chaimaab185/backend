@@ -1,8 +1,13 @@
+
 CREATE TABLE IF NOT EXISTS users (
-    id SERIAL PRIMARY KEY,
-    nom VARCHAR(100) NOT NULL
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100)
 );
 
-INSERT INTO users (nom) VALUES ('Alice'), ('Bob'), ('Charlie');
+INSERT INTO users (id, name, email) VALUES
+  (1, 'Ali', 'ali@example.com'),
+  (2, 'Sara', 'sara@example.com');
+
 
 
